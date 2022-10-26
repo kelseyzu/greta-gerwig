@@ -2,14 +2,6 @@
 
 
 
-@font-face {
-    font-family: 'vtf_victoriannathin';
-    src: url('vtf_victorianna_thin-webfont.eot');
-    src: url('vtf_victorianna_thin-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html, body {
     height: 100%;
     width: 100%
@@ -45,6 +37,20 @@ h1 {
 p {
     margin-bottom: 0;
     font-size: 19px;
+}
+
+.gallery1 p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #659E60;
+}
+
+.gallery1 {
+    display: flex;
+}
+
+.gallery1 div {
+    flex: 1 ;
 }
 
 main {
