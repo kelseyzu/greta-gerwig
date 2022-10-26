@@ -83,7 +83,6 @@ nav a {
 .homepage main {
     display: flex;
     margin: auto;
-    border: 1px solid red;
 }
 
 .right {
