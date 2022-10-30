@@ -5,7 +5,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #FFFCF6;
+  background-color: #fffcf6;
 }
 
 * {
@@ -33,7 +33,7 @@ h2 {
 }
 
 .topnav a:hover {
-  border-bottom: 1px solid #48200F;
+  border-bottom: 1px solid #48200f;
 }
 
 .head1 {
@@ -52,7 +52,7 @@ h2 {
 .greta h2 {
   padding-top: 100px;
   text-transform: uppercase;
-  color: #48200F;
+  color: #48200f;
 }
 
 h2 {
@@ -148,7 +148,7 @@ body {
 }
 
 .illustration .flowerpot {
-    width: 120%;
+  width: 120%;
 }
 
 .pink-box {
@@ -163,7 +163,7 @@ body {
 }
 
 .pink-box p {
-  color: #48200F;
+  color: #48200f;
 }
 
 .pink-box .left {
@@ -192,7 +192,7 @@ body {
 }
 
 .about img {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 /* navigation */
@@ -213,38 +213,37 @@ nav {
 }
 
 nav a {
-  color: #48200F;
+  color: #48200f;
   text-decoration: none;
 }
 
 /* nights and weekends */
 
 .left-synopsis {
-    display: flex;
-    color: #659e60;
-    padding-right: 200px;
-    padding-left: 200px;
-  }
+  display: flex;
+  color: #659e60;
+  padding-right: 200px;
+  padding-left: 200px;
+}
 .left-synopsis div {
-    flex: 1;
-  }
+  flex: 1;
+}
 .left-synopsis .left {
-    padding: 60px 0 0 0;
-  }
-  
-.left-synopsis img {
-      padding-top: 50px;
-  }
+  padding: 60px 0 0 0;
+}
 
-  .nw-image {
-    background-color: #E5BD2F;
-    padding: 10px;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-bottom: 10px;
-    text-align: center;
-  
-  }
+.left-synopsis img {
+  padding-top: 50px;
+}
+
+.nw-image {
+  background-color: #e5bd2f;
+  padding: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 .nw-cast {
   display: flex;
@@ -256,44 +255,65 @@ nav a {
   text-align: center;
 }
 
-.nw-cast h3, .nw-cast p {
+.nw-cast h3,
+.nw-cast p {
   font-size: 26px;
-  color: #E5BD2F;
+  color: #e5bd2f;
   line-height: 20%;
 }
-
 
 blockquote {
   margin-top: 100px;
 }
 
 .title {
-    text-align: center;
-    padding-bottom: 200px;
+  text-align: center;
+  padding-bottom: 200px;
 }
-  
+
 /* video page */
 #video {
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    margin: 0;
-  }
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: 0;
+}
 
-  .footer {
-    background-color: #659e60;
-  }
+.footer {
+  background-color: #659e60;
+}
 
-  .footer p {
-    text-align:center;
-    color: white;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.nights-and-weekends .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
