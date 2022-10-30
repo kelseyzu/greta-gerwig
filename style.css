@@ -5,6 +5,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #FFFCF6;
 }
 
 * {
@@ -26,28 +27,43 @@ h1 {
   font-family: 'Poiret One', cursive;
   line-height: 90px;
 }
-.topnav a:hover {
-  border-bottom: 1px solid black;
-}
-.head1 {
-  margin-left: 80px;
-}
-.greta-text {
-  display: inline-block;
-  margin-left: -80px;
-}
 
 h2 {
   font-size: 26px;
 }
 
+.topnav a:hover {
+  border-bottom: 1px solid #48200F;
+}
+
+.head1 {
+  margin-left: 80px;
+}
+
+.greta-text {
+  display: inline-block;
+  margin-left: -80px;
+}
+
+.greta h1 {
+  margin-top: 20px;
+}
+
 .greta h2 {
   padding-top: 100px;
   text-transform: uppercase;
+  color: #48200F;
 }
 
-h1 {
+h2 {
   margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 0;
+  font-size: 19px;
+  font-weight: 400;
 }
 
 blockquote {
@@ -60,17 +76,11 @@ blockquote {
   margin: auto;
 }
 
-p {
-  margin-bottom: 0;
-  font-size: 19px;
-  font-weight: 400;
-}
-
-.gallery1 p {
-  font-size: 14px;
+.gallery1 h2 {
+  font-size: 23px;
   text-transform: uppercase;
   color: #659e60;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .gallery1 {
@@ -83,6 +93,18 @@ p {
 .gallery1 div {
   padding: 10px;
   flex: 1;
+}
+
+.gallery1 p {
+  color: #659e60;
+  font-size: 15px;
+  border: 1px solid #659e60;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
 main {
@@ -110,6 +132,11 @@ body {
   padding-right: 60px;
 }
 
+.right img {
+  align-items: flex-start;
+  width: 25%;
+}
+
 .illustration {
   display: flex;
   width: 70%;
@@ -133,6 +160,10 @@ body {
   height: 362px;
   z-index: -1;
   display: flex;
+}
+
+.pink-box p {
+  color: #48200F;
 }
 
 .pink-box .left {
@@ -169,6 +200,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-end;
+  padding-top: 20px;
 }
 
 .topnav {
@@ -181,7 +213,7 @@ nav {
 }
 
 nav a {
-  color: #202020;
+  color: #48200F;
   text-decoration: none;
 }
 
@@ -219,6 +251,7 @@ nav a {
   justify-content: space-around;
   padding-left: 200px;
   padding-right: 200px;
+  padding-bottom: 30px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -236,11 +269,11 @@ blockquote {
 
 .title {
     text-align: center;
-    padding-top: 200px;
+    padding-bottom: 200px;
 }
   
 /* video page */
-.video {
+#video {
     width: 100vw;
     object-fit: cover;
     position: fixed;
@@ -250,4 +283,17 @@ blockquote {
     bottom: 0;
     z-index: -1;
     margin: 0;
+  }
+
+  .footer {
+    background-color: #659e60;
+  }
+
+  .footer p {
+    text-align:center;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
