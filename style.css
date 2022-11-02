@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@font-face {
+  font-family: "VTF Victorianna";
+  src: url("fonts/vtf_victorianna_thin-webfont.woff") format('woff');
+}
+@font-face {
+  font-family: "VTF Victorianna";
+  src: url("fonts/vtf_victorianna_thin_talic-webfont.woff") format('woff');
+  font-style: italic;
+}
+
 
 html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #fffcf6;
+/*  background-color: #fffcf6; */
 }
 
 * {
@@ -21,10 +31,10 @@ img {
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 150px;
   font-weight: 500;
   color: #659e60;
-  font-family: 'Poiret One', cursive;
+  font-family: 'VTF Victorianna', 'Poiret One', cursive;
   line-height: 90px;
 }
 
@@ -33,7 +43,11 @@ h2 {
 }
 
 .topnav a:hover {
-  border-bottom: 1px solid #48200f;
+  border-bottom: 1px solid #000000;
+}
+
+.topnav-page a:hover {
+  border-bottom: 1px solid #000000;
 }
 
 .head1 {
@@ -41,8 +55,15 @@ h2 {
 }
 
 .greta-text {
+  font-size: 'VTF Victorianna';
+  font-style: italic;
   display: inline-block;
   margin-left: -80px;
+  margin-bottom: 40px;
+} 
+.gerwin-text {
+  display: inline-block;
+  margin-left: 0px;
 }
 
 .greta h1 {
@@ -50,7 +71,8 @@ h2 {
 }
 
 .greta h2 {
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px;
   text-transform: uppercase;
   color: #48200f;
 }
@@ -178,6 +200,18 @@ body {
   flex: 22%;
 }
 
+.green-box {
+  background: #659e60;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  bottom: 0px;
+  height: 660px;
+  z-index: -1;
+  display: flex;
+  opacity: 50%;
+}
+
 .about {
   display: flex;
   color: #659e60;
@@ -198,9 +232,11 @@ body {
 /* navigation */
 
 nav {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
+  z-index: 1;
 }
 
 .topnav {
@@ -212,12 +248,45 @@ nav {
   padding-right: 40px;
 }
 
+.topnav-page {
+  display: flex;
+  list-style: none;
+}
+
+.topnav-page li {
+  padding-right: 40px;
+}
+
 nav a {
-  color: #48200f;
+  color: #000000;
   text-decoration: none;
 }
 
+.logo img {
+  position: relative;
+  width: 120px;
+  bottom: 6px;
+}
+
+/*.nights-and-weekends nav a {
+  color: #fffcf6;
+  text-decoration: none;
+}*/
+
+
 /* nights and weekends */
+
+.nights-and-weekends .title .nights-line1 {
+  font-family: VTF Victorianna;
+  font-style: italic;
+  position: relative;
+  padding-top: 200px;
+}
+
+.nights-and-weekends .title .nights-line2 {
+  position: relative;
+  top: -150px
+}
 
 .left-synopsis {
   display: flex;
@@ -228,21 +297,37 @@ nav a {
 .left-synopsis div {
   flex: 1;
 }
+
 .left-synopsis .left {
-  padding: 60px 0 0 0;
+  padding: 0;
 }
 
 .left-synopsis img {
-  padding-top: 50px;
+  padding-top: -50px;
+}
+
+.right-synopsis {
+  display: flex;
+  color: #659e60;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+.right-synopsis div {
+  flex: 1;
+}
+
+.right-synopsis .left {
+  padding: 0;
+}
+
+.right-synopsis img {
+  padding-top: -50px;
 }
 
 .nw-image {
-  background-color: #e5bd2f;
-  padding: 10px;
   margin-right: 100px;
   margin-left: 100px;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .nw-cast {
@@ -250,7 +335,7 @@ nav a {
   justify-content: space-around;
   padding-left: 200px;
   padding-right: 200px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -268,20 +353,6 @@ blockquote {
 
 .title {
   text-align: center;
-  padding-bottom: 200px;
-}
-
-/* video page */
-#video {
-  width: 100vw;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  margin: 0;
 }
 
 .footer {
@@ -307,8 +378,9 @@ iframe {
   top: 50%;
   left: 50%;
   width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
+  height: 660px;
+  transform: translate(-50%, -44%);
+  z-index: -2;
 }
 
 .nights-and-weekends .title {
@@ -316,4 +388,53 @@ iframe {
   top: 0;
   left: 0;
   right: 0;
+}
+
+.nights-and-weekends .title h1 {
+  color: #fffcf6;
+}
+
+.lady-bird .title .lady-title {
+  font-family: VTF Victorianna;
+  position: relative;
+  padding-top: 200px;
+}
+
+.lady-bird .title .bird-title {
+  position: relative;
+  font-style: italic;
+}
+
+.lady-bird h2 {
+  font-family: 'VTF Victorianna';
+  font-size: 90px;
+}
+
+.lady-bird .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.lady-bird .title h1 {
+  color: #fffcf6;
+}
+
+.lb-cast {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lb-cast h3,
+.lb-cast p {
+  font-size: 26px;
+  color: #80A9E5;
+  line-height: 20%;
+  text-align: center;
 }
