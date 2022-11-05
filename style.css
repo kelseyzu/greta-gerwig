@@ -288,6 +288,12 @@ nav a {
   top: -150px
 }
 
+.nights-and-weekends h2 {
+  font-family: 'VTF Victorianna';
+  font-size: 90px;
+  padding-bottom: 20px;
+}
+
 .left-synopsis {
   display: flex;
   color: #659e60;
@@ -368,6 +374,19 @@ blockquote {
   padding-bottom: 20px;
 }
 
+.nights-and-weekends .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nights-and-weekends .title h1 {
+  color: #fffcf6;
+}
+
+/* video */
+
 .video-container {
   width: 100vw;
   height: 100vh;
@@ -383,16 +402,7 @@ iframe {
   z-index: -2;
 }
 
-.nights-and-weekends .title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.nights-and-weekends .title h1 {
-  color: #fffcf6;
-}
+/*lady bird*/
 
 .lady-bird .title .lady-title {
   font-family: VTF Victorianna;
@@ -408,6 +418,7 @@ iframe {
 .lady-bird h2 {
   font-family: 'VTF Victorianna';
   font-size: 90px;
+  padding-bottom: 20px;
 }
 
 .lady-bird .title {
@@ -424,10 +435,16 @@ iframe {
 .lb-cast {
   display: flex;
   justify-content: space-around;
+  padding-top: 60px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.lb-cast .article{
+  flex: 1;
   text-align: center;
 }
 
@@ -437,4 +454,108 @@ iframe {
   color: #80A9E5;
   line-height: 20%;
   text-align: center;
+}
+
+/*little women*/
+
+.little-women .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.little-women .title .little-title {
+  font-family: VTF Victorianna;
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: -50px;
+}
+
+.little-women .title .women-title {
+  position: relative;
+  font-style: italic;
+}
+
+.little-women .title h1 {
+  color: #fffcf6;
+}
+
+.little-women h2 {
+  font-family: 'VTF Victorianna';
+  font-size: 90px;
+  padding-bottom: 20px;
+}
+
+.lw-cast {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lw-cast .article{
+  flex: 1;
+  text-align: center;
+}
+
+.lw-cast h3,
+.lw-cast p {
+  font-size: 26px;
+  color: #F0B0BF;
+  line-height: 20%;
+  text-align: center;
+}
+
+/* barbie */
+
+.barbie .title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.barbie .title {
+  font-style: italic;
+  padding-top: 250px;
+  padding-bottom: -50px;
+}
+
+.barbie .title h1 {
+  color: #fffcf6;
+}
+
+.barbie-cast {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.barbie-cast .article{
+  flex: 1;
+  text-align: center;
+}
+
+.barbie-cast h3,
+.barbie-cast p {
+  font-size: 26px;
+  color: #e5bd2f;
+  line-height: 20%;
+  text-align: center;
+}
+
+.barbie h2 {
+  font-family: 'VTF Victorianna';
+  font-size: 90px;
+  padding-bottom: 20px;
 }
