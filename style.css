@@ -74,7 +74,6 @@ h2 {
   padding-top: 50px;
   padding-bottom: 20px;
   text-transform: uppercase;
-  color: #48200f;
 }
 
 h2 {
@@ -107,6 +106,7 @@ blockquote {
 
 .gallery1 {
   display: flex;
+  margin-top: -100px;
 }
 .gallery1 img {
   padding: 0;
@@ -118,6 +118,18 @@ blockquote {
 }
 
 .gallery1 p {
+  color: #659e60;
+  font-size: 15px;
+  border: 1px solid #659e60;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.circle {
   color: #659e60;
   font-size: 15px;
   border: 1px solid #659e60;
@@ -161,8 +173,20 @@ body {
 
 .illustration {
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: 100px auto;
+}
+
+.illustration .flowerpot {
+  position: relative;
+  top: -30px;
+  flex: 50%;
+}
+
+.illustration .camera {
+  position: relative;
+  top: 80px;
+  flex: 30%;
 }
 
 .illustration div {
@@ -434,13 +458,16 @@ iframe {
 
 .lb-cast {
   display: flex;
-  justify-content: space-around;
   padding-top: 60px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.lb-cast img {
+  width: 100%;
 }
 
 .lb-cast .article{
@@ -498,6 +525,10 @@ iframe {
   text-align: center;
 }
 
+.lw-cast img {
+  width: 100%;
+}
+
 .lw-cast .article{
   flex: 1;
   text-align: center;
@@ -539,6 +570,10 @@ iframe {
   padding-bottom: 50px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.barbie-cast img {
+  width: 100%;
 }
 
 .barbie-cast .article{
