@@ -355,9 +355,21 @@ nav a {
 }
 
 .nw-image {
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-bottom: 10px;
+  background-image: url('images/nightsweekends_yellow.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 90%;
+  margin: auto;
+}
+
+.nw-image:hover {
+  background-image: url('images/nightsweekends_pink.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 90%;
+  margin: auto;
 }
 
 .nw-cast {
@@ -409,12 +421,16 @@ blockquote {
   color: #fffcf6;
 }
 
-/* video */
-
-.video-container {
+#nightsandweekend-video {
+  position: relative;
+  right: 0;
+  bottom: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 660px;
+  z-index: -3;
 }
+
+/* video */
 
 iframe {
   position: absolute;
@@ -422,7 +438,6 @@ iframe {
   left: 50%;
   width: 100vw;
   height: 660px;
-  transform: translate(-50%, -44%);
   z-index: -2;
 }
 
