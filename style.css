@@ -765,20 +765,20 @@ iframe {
   margin: auto;
 }
 
-.barbie .title {
+.barbie-page .title {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.barbie .title {
+.barbie-page .title {
   font-style: italic;
   padding-top: 250px;
   padding-bottom: -50px;
 }
 
-.barbie .title h1 {
+.barbie-page .title h1 {
   color: #fffcf6;
 }
 
@@ -810,7 +810,7 @@ iframe {
   text-align: center;
 }
 
-.barbie h2 {
+.barbie-page h2 {
   font-family: 'VTF Victorianna';
   font-size: 90px;
   padding-bottom: 20px;
