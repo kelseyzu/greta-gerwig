@@ -21,7 +21,7 @@
             <li><a href="nights-and-weekends.html">Nights and Weekends</a></li>
             <li><a href="lady-bird.html">Lady Bird</a></li>
             <li><a href="little-women.html">Little Women</a></li>
-            <li><a href="barbie.html">Barbie</a></li>
+            <li><a class="active" href="barbie.html">Barbie</a></li>
           </ul>
         </nav>
       </div>
@@ -31,7 +31,8 @@
 
     <!-- video background -->
     <div class="video-container" >
-      <iframe src="https://www.youtube.com/embed/r6hMVS2wHdI?&autoplay=1&mute=1&playsinline=1&controls=0&playlistr6hMVS2wHdI&loop=1" autoplay loop></iframe>
+      <video autoplay muted loop id="barbie-video">
+        <source src="video/barbie.mp4" type:"video/mp4">
     </div>
 
     <!-- overlay text to describe the video -->
@@ -50,16 +51,14 @@
     </section>
 
     <section class="barbie-cast">
-        <article class="left">
+        <article>
           <div class="barbie">
-              <img src="images/barbie_yellow.jpg" />
             </div>
           <h3>Margot Robbie</h3>
           <p>As Barbie</p>
         </article>
-        <article class="right">
+        <article>
           <div class="ken">
-              <img src="images/ken_yellow.jpg" />
             </div>
           <h3>Ryan Gosling</h3>
           <p>As Ken</p>
